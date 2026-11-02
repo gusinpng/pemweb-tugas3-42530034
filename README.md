@@ -3,9 +3,10 @@
 Aplikasi CRUD daftar buku menggunakan Express.js, EJS, dan MySQL. Struktur aplikasi dipisahkan menggunakan pola MVC (Model, View, Controller).
 
 ## Identitas
-- Nama: [Isi nama lengkap]
-- NIM: [Isi NIM]
-- Tema: Daftar Buku
+- Nama: [Gede Bagus Indra Tanaya]
+- NIM: [42530034]
+- Tema: Daftar Buku Digital
+- Link Youtube : https://youtu.be/s-GozpioMPQ?si=Cmb7uyEx-O1tx6Xq
 
 ## Fitur
 - **Create:** tambah data buku.
