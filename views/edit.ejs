@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Buku</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>Edit buku</h1>
+
+    <% if (error) { %>
+      <p class="pesan-error"><%= error %></p>
+    <% } %>
+
+    <form class="kolom" method="POST" action="/edit/<%= b.id %>">
+      <label>Judul
+        <input type="text" name="judul" value="<%= b.judul %>" required maxlength="150">
+      </label>
+      <label>Penulis
+        <input type="text" name="penulis" value="<%= b.penulis %>" required maxlength="100">
+      </label>
+      <label>Tahun terbit
+        <input type="number" name="tahun_terbit" value="<%= b.tahun_terbit %>" min="1000" max="2100" required>
+      </label>
+      <div>
+        <button type="submit">Simpan perubahan</button>
+        <a href="/">Batal</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
